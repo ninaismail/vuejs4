@@ -10,6 +10,7 @@ export default {
       colors : {
         "primary": "#f2780b",
         "bgcolor": "#1e1e1e",
+        "offwhite": "#fdf1f5"
       },
       backgroundOpacity: {
         10: '0.1',
