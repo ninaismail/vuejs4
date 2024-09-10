@@ -12,6 +12,7 @@ const navlinks = [
 
 const isOpen = ref(false);
 const isHover = ref(false);
+const changeColor = ref(false);
 
 const toggleOpen = () => {
   isOpen.value = !isOpen.value;
@@ -19,9 +20,9 @@ const toggleOpen = () => {
 
 const handleScroll = () => {
   if (window.scrollY > 10) {
-    changecolor.value = true;
+    changeColor.value = true;
   } else {
-    changecolor.value = false;
+    changeColor.value = false;
   }
 }
 
@@ -36,8 +37,8 @@ onUnmounted(() => {
 </script>
 <template>
 <div v-if="isOpen" class="fixed inset-0 z-[3] w-full h-screen" @click="isOpen = false"/>
- <header class="absolute inset-0 z-[5] h-[74px] mx-auto py-3"
- :class="changecolor ? 'bg-bgcolor shadow-md' : 'bg-transparent'">
+ <header class="fixed inset-0 z-[5] h-[100px] mx-auto pt-3"
+ :class="changeColor ? 'bg-bgcolor shadow-md' : 'bg-transparent'">
   <div class="items-center justify-between w-10/12 mx-auto lg:flex">
     <div class="w-2/12">
      <iconLogo/>
@@ -53,7 +54,7 @@ onUnmounted(() => {
         </RouterLink>
       </div> 
     </nav> 
-    <div class="flex justify-end w-2/12">
+    <div class="flex justify-end items-center w-2/12">
       <RouterLink id="go-to-contact-section" aria-label="go to contact section" to="/contact" class="max-lg:absolute right-[8.333333%] font-[800] text-2xl top-4 w-fit cursor-pointer py-2 px-5 transition-all duration-400 text-center rounded-[2px] text-white bg-primary hover:brightness-125">Contact Us</RouterLink>
     </div>
     <!-- Mobile -->
