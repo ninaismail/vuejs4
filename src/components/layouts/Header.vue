@@ -47,14 +47,14 @@ onUnmounted(() => {
     <nav class="items-center justify-center hidden w-9/12 gap-10 lg:flex">
       <div v-for="(item, key) in navlinks" :key="key" class="relative">
         <RouterLink :id="item.name" :aria-label="'go to' + item.name" :to="item.to"   
-        class="px-3 cursor-pointer font-[500] text-xl text-white group"
+        class="px-3 cursor-pointer font-[500]2xl:text-xl lg:text-lg md:text-md text-white group"
         @mouseenter="isHover = item.id">
         <span>{{ item.name }}</span>
           <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-600"></span>
         </RouterLink>
       </div> 
     </nav> 
-    <div class="flex justify-end items-center w-2/12">
+    <div class="flex items-center justify-end w-2/12">
       <RouterLink id="go-to-contact-section" aria-label="go to contact section" to="/contact" class="max-lg:absolute right-[8.333333%] font-[800] text-2xl top-4 w-fit cursor-pointer py-2 px-5 transition-all duration-400 text-center rounded-[2px] text-white bg-primary hover:brightness-125">Contact Us</RouterLink>
     </div>
     <!-- Mobile -->
@@ -70,7 +70,7 @@ onUnmounted(() => {
     <nav v-show="isOpen" class="w-full p-8 space-y-8 lg:hidden bg-bgcolor">
       <div v-for="(item, key) in navlinks" :key="key">
         <RouterLink :id="item.name" :aria-label="'go to' + item.name" :to="item.to" 
-        class="w-6/12 font-[500] text-xl cursor-pointer text-white drop-shadow-md group">
+        class="w-6/12 font-[500]2xl:text-xl lg:text-lg md:text-md  cursor-pointer text-white drop-shadow-md group">
           <span>{{ item.name }}</span>
           <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-600"></span>
         </RouterLink>
