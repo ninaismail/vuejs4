@@ -47,7 +47,7 @@ onUnmounted(() => {
     <nav class="items-center justify-center hidden w-9/12 gap-10 lg:flex">
       <div v-for="(item, key) in navlinks" :key="key" class="relative">
         <RouterLink :id="item.name" :aria-label="'go to' + item.name" :to="item.to"   
-        class="px-3 cursor-pointer font-[500]2xl:text-xl lg:text-lg md:text-md text-white group"
+        class="px-3 cursor-pointer font-[500]2xl:text-xl lg:text-lg md:text-md text-offwhite group"
         @mouseenter="isHover = item.id">
         <span>{{ item.name }}</span>
           <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-600"></span>
@@ -55,7 +55,7 @@ onUnmounted(() => {
       </div> 
     </nav> 
     <div class="flex items-center justify-end w-2/12">
-      <RouterLink id="go-to-contact-section" aria-label="go to contact section" to="/contact" class="max-lg:absolute right-[8.333333%] font-[800] text-2xl top-4 w-fit cursor-pointer py-2 px-5 transition-all duration-400 text-center rounded-[2px] text-white bg-primary hover:brightness-125">Contact Us</RouterLink>
+      <RouterLink id="go-to-contact-section" aria-label="go to contact section" to="/contact" class="max-lg:absolute right-[8.333333%] font-[800] text-2xl top-4 w-fit cursor-pointer py-2 px-5 transition-all duration-400 text-center rounded-[2px] text-offwhite bg-primary hover:brightness-125">Contact Us</RouterLink>
     </div>
     <!-- Mobile -->
     <button aria-label="open menu" class="absolute flex items-center justify-center w-8 h-8 left-[8.333333%] lg:hidden top-7" @click="toggleOpen">
@@ -63,14 +63,14 @@ onUnmounted(() => {
       <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"></path>
       </svg>   
       <Transition>
-      <h1 v-if="isOpen" class="text-2xl text-white">&#10005;</h1>
+      <h1 v-if="isOpen" class="text-2xl text-offwhite">&#10005;</h1>
       </Transition> 
     </button>
     <Transition>
     <nav v-show="isOpen" class="w-full p-8 space-y-8 lg:hidden bg-bgcolor">
       <div v-for="(item, key) in navlinks" :key="key">
         <RouterLink :id="item.name" :aria-label="'go to' + item.name" :to="item.to" 
-        class="w-6/12 font-[500]2xl:text-xl lg:text-lg md:text-md  cursor-pointer text-white drop-shadow-md group">
+        class="w-6/12 font-[500]2xl:text-xl lg:text-lg md:text-md  cursor-pointer text-offwhite drop-shadow-md group">
           <span>{{ item.name }}</span>
           <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-600"></span>
         </RouterLink>

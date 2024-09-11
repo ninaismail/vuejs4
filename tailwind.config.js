@@ -8,9 +8,9 @@ export default {
         body: ['Barlow']
       },
       colors : {
-        "primary": "#f2780b",
-        "bgcolor": "#1e1e1e",
-        "offwhite": "#fdf1f5"
+        "primary": "#F2780B",
+        "bgcolor": "#1E1E1E",
+        "offwhite": "#FDF1F5"
       },
       backgroundOpacity: {
         10: '0.1',
