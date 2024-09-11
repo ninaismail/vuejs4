@@ -14,7 +14,7 @@ const footerlinks = [
     <footer class="flex flex-wrap h-[60vh]">
       <div class="w-full bg-black bg-center bg-cover md:w-1/2 aspect-sqaure">
       </div>
-      <div class="relative flex flex-col justify-center w-full bg-center bg-cover bg-offwhite/10 md:w-1/2">
+      <div class="relative flex flex-col justify-center w-full bg-center bg-cover bg-[#646565] md:w-1/2">
           <div class="flex justify-center gap-3 p-10">
             <div class="space-y-10">
               <div class="space-y-3">
