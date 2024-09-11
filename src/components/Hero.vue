@@ -1,5 +1,5 @@
 <template>
-    <section class="pt-60 bg-cener bg-cover bg-primary/10 min-h-[85vh] border-white border-b-[2px] rounded-b-[160px]">
+    <section class="pt-60 bg-cener bg-cover bg-primary/10 min-h-[85vh] border-white border-b-[2px] sm:rounded-b-[160px] rounded-b-[60px]">
        <div class="flex flex-col justify-around w-11/12 gap-3 pb-20 mx-auto 2xl:8/12 sm:w-10/12">
         <h1 class="text-offwhite font-[900] 2xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl text-5xl appurcase">IBI Holding</h1>
         <hr class="h-32 w-[2px] ms-2 bg-primary border-0"/>
