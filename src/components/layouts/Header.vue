@@ -37,9 +37,9 @@ onUnmounted(() => {
 <template>
 <div v-if="isOpen" class="fixed inset-0 z-[3] w-full h-screen" @click="isOpen = false"/>
  <header class="fixed inset-0 z-[5] h-[100px] mx-auto pt-3"
- :class="changeColor ? 'bg-bgcolor shadow-md' : 'bg-transparent'">
+ :class="changeColor || isOpen === true ? 'bg-bgcolor shadow-md' : 'bg-transparent'">
   <div class="items-center justify-between mx-auto lg:w-10/12 lg:flex">
-    <div class="w-2/3 lg:w-2/12">
+    <div class="w-2/3 lg:w-2/12 max-lg:ps-[8.333333%]">
      <iconLogo/>
     </div>
     <!-- Desktop -->
