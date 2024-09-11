@@ -3,7 +3,7 @@
         <BGPattern/>
         <div class="relative flex flex-col justify-around w-11/12 gap-10 mx-auto 2xl:8/12 sm:w-10/12">
             <div class="flex flex-col gap-3 mx-auto">
-                <h1 class="text-offwhite font-[600] 2xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-4xl tracking-wide">Our Main Investments</h1>
+                <h1 class="text-offwhite font-[600] 2xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-4xl tracking-wide">Strategic Power in Action</h1>
                 <p class="text-offwhite font-[500] 2xl:text-2xl lg:text-xl md:text-lg sm:text-md text-justify">IBI Holding invests in tech companies and adds value to industries by nurturing new businesses, seeking
                 partnerships and joint ventures, and funding innovation initiatives that need the support to drive change.</p>
            </div>

@@ -1,25 +1,34 @@
 <template>
-    <section class="flex flex-col justify-around w-11/12 gap-10 py-40 mx-auto 2xl:8/12 sm:w-10/12">
-        <div class="flex flex-col gap-3 mx-auto">
-        <h1 class="text-offwhite font-[600] 2xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-4xl tracking-wide">Our Sustainable Approach</h1>
-        <p class="text-offwhite font-[500] 2xl:text-2xl lg:text-xl md:text-lg sm:text-md text-justify">Our sustainability agenda relies on our commitment to Environmental, Social, and Governance (ESG) principles. We integrate significant ESG factors into our
-        decision-making processes, guided by our ESG Policy. Our approach includes active ownership, addressing systemic ESG issues, collaboration, and advocacy.
-        We believe that responsible investing contributes to long-term sustainable value for our stakeholders.</p>
-       </div>
-       <div class="flex flex-col gap-6 mx-auto">
-        <h2 class="text-offwhite font-[600] 2xl:text-2xl lg:text-xl md:text-lg sm:text-md tracking-wide">Our sustainability framework relies on 3 dimensions:</h2>
-        <div class="grid w-full grid-cols-1 gap-20 lg:grid-cols-3 sm:grid-cols-2">
-            <div v-for="(item, key) in data" :key="key" class="flex flex-col items-center justify-center col-span-1 gap-6 group">
-                <component :is="item.icon" class="w-40 aspect-square"/>
-                <h3 class="text-offwhite group-hover:text-primary transition-all duration-400 font-[600] 2xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl tracking-wide text-center">{{ item.title }}</h3>
-                <p class="text-offwhite group-hover:text-primary transition-all duration-400 font-[500] 2xl:text-2xl lg:text-xl md:text-lg sm:text-md text-center">{{ item.content }}</p>
+    <section class="relative py-40 bg-bgcolor">
+        <BGPattern/>
+        <div class="relative flex flex-wrap items-center justify-between w-11/12 mx-auto gap-y-6 2xl:8/12 sm:w-10/12">
+           <div class="w-full bg-black bg-center bg-cover md:w-6/12 lg:w-6/12 aspect-square">
+            <div class="bg-primary/30 h-full w-[85%] border-white border-e-[2px] rounded-e-[160px] flex flex-col justify-center gap-3">
+                <div class="flex">
+                    <span class="w-[72px] h-[72px] bg-primary"></span>
+                    <h1 class="-ms-10 text-offwhite font-[600] 2xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-4xl tracking-wide">Our Approach</h1>
+                </div>
+                <p class="ms-4 px-6 text-offwhite font-[500] 2xl:text-2xl lg:text-xl md:text-lg sm:text-md text-justify">
+                    We offer strategic capital and deep expertise at crucial moments to empower visionary founders. Our approach combines innovative support with a focus on sustainability, ensuring exceptional returns and lasting impact.</p>
+            </div>
+            <!-- <img src="" alt="IBI Holding" width="54" height="53" center cover responsive loading="lazy" /> -->
            </div>
-        </div>
+            <ul role="list" class="w-full space-y-10 lg:w-5/12 md:w-5/12 list-style-none">
+                <li v-for="(item, key) in data" :key="key" class="flex gap-x-4 gap-y-10">
+                    <span class="text-offwhite h-[32px] w-[32px] bg-primary font-[900] 2xl:text-xl lg:text-lg md:text-md p-3 grid place-content-center">0{{ item.id }}</span>
+                    <div class="space-y-3">
+                        <h2 class="text-offwhite font-[600] 2xl:text-xl lg:text-lg md:text-md">{{ item.title }}</h2>
+                        <p class="text-offwhite 2xl:text-xl lg:text-lg md:text-md font-[500]">{{ item.content }}</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 </template>
 
 <script setup>
+import BGPattern from './icons/BGPattern.vue';
+
 defineProps({
     data: Array
 })

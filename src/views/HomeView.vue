@@ -1,22 +1,24 @@
 <script setup>
 import Hero from '../components/Hero.vue'
-import Approach from '../components/Approach.vue'
+import Commitment from '../components/Commitment.vue'
 import iconEnvironment from '../components/icons/iconEnvironment.vue'
 import iconEconomy from '../components/icons/iconEconomy.vue'
 import iconSociety from '../components/icons/iconSociety.vue'
-import Values from '../components/Values.vue'
+import Approach from '../components/Approach.vue'
 import Investments from '@/components/Investments.vue'
+const commitments = [
+{title: 'Environment', content:'We invest in solutions that minimize environmental impact, promote renewable energy, and drive ecological innovation.', icon: iconEnvironment},
+{title: 'Society', content:'We are committed to advancing social equity, supporting initiatives that improve quality of life, and creating opportunities for all.', icon: iconEconomy},
+{title: 'Governance', content:'Our governance practices ensure that we operate responsibly, ethically, and in alignment with the best interests of all stakeholders.', icon: iconSociety}
+]
+
 const approaches = [
-{title: 'Environmet', content:'Investing in environmentally friendly companies working towards the same sustainable goals as us.', icon: iconEnvironment},
-{title: 'Economy', content:'Supporting long-term economic growth without depleting resources.', icon: iconEconomy},
-{title: 'Society', content:'Ensuring a happy and healthy society where human rights are respected.', icon: iconSociety}
+{id:1, title: 'Integrity', content:'Every decision is driven by transparency, fairness, and an unyielding commitment to ethical standards.'},
+{id:2, title: 'Innovation', content:'We are constantly pushing the boundaries of groundbreaking ideas and technologies.'},
+{id:3, title: 'Sustainability', content:'We ensure that every project contributes to a healthier and more resilient planet.'},
+{id:4, title: 'Impact', content:' Every investment is a calculated move towards creating profound, lasting change on a global scale.'}
 ]
-const values = [
-{id:1, title: 'Impact', content:'We drive meaningful change by purposefully creating positive impacts no matter how small.'},
-{id:2, title: 'Trust', content:'Trust is our cornerstone. It underpins all our relationships and drives shared value creation.'},
-{id:3, title: 'People-First', content:'By putting people first, we create an inclusive and growth-oriented culture through empathy, active listening, and human-centric practices.'},
-{id:4, title: 'Innovation', content:'Pioneering Digital Futures: We continuously explore new horizons, creating state-of-the-art digital solutions to empower our stakeholders.'}
-]
+
 const investments = [
 {title: 'Advanced Technologies', content:'We invest in next-generation industrial technologies, including AI-driven automation, advanced robotics, and breakthrough energy solutions, to drive innovation that sets new industry standards and opens up unprecedented possibilities.'},
 {title: 'Infrastructure Projects', content:'We invest in next-generation industrial technologies, including AI-driven automation, advanced robotics, and breakthrough energy solutions, to drive innovation that sets new industry standards and opens up unprecedented possibilities.'},
@@ -28,8 +30,8 @@ const investments = [
 <template>
   <main>
     <Hero />
+    <Commitment :data="commitments"/>
     <Approach :data="approaches"/>
-    <Values :data="values"/>
     <Investments :data="investments"/>
   </main>
 </template>
