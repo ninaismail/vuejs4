@@ -6,8 +6,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const navlinks = [
   { id: 1, name: 'Home', to: '/' },
   { id: 2, name: 'Values', to: '/' },
-  { id: 3, name: 'INNOVATIONS', to: '/' },
-  { id: 4, name: 'INVESTMENTS', to: '/' },
+  { id: 3, name: 'Investments', to: '/' },
 ];
 
 const isOpen = ref(false);
@@ -47,7 +46,7 @@ onUnmounted(() => {
     <nav class="items-center justify-center hidden w-9/12 gap-10 lg:flex">
       <div v-for="(item, key) in navlinks" :key="key" class="relative">
         <RouterLink :id="item.name" :aria-label="'go to' + item.name" :to="item.to"   
-        class="px-3 cursor-pointer font-[500]2xl:text-xl lg:text-lg md:text-md text-offwhite group"
+        class="px-3 cursor-pointer font-[500] 2xl:text-xl lg:text-lg md:text-md text-offwhite group"
         @mouseenter="isHover = item.id">
         <span>{{ item.name }}</span>
           <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-600"></span>
@@ -70,7 +69,7 @@ onUnmounted(() => {
     <nav v-show="isOpen" class="w-full p-8 space-y-8 lg:hidden bg-bgcolor">
       <div v-for="(item, key) in navlinks" :key="key">
         <RouterLink :id="item.name" :aria-label="'go to' + item.name" :to="item.to" 
-        class="w-6/12 font-[500]2xl:text-xl lg:text-lg md:text-md  cursor-pointer text-offwhite drop-shadow-md group">
+        class="w-6/12 font-[500] 2xl:text-xl lg:text-lg md:text-md  cursor-pointer text-offwhite drop-shadow-md group">
           <span>{{ item.name }}</span>
           <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-600"></span>
         </RouterLink>
