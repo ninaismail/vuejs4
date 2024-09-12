@@ -24,9 +24,11 @@ export default {
         'pattern':'url(images/landingpage/pattern.svg)',
       },
       aspectRatio: {
+        '3.17/1': '3.17 / 1', //logo
         '2.27/1': '2.27 / 1', //hero
         '1.14/1': '1.14 / 1', //values
         '1.57/1': '1.57 / 1', //footer
+        '1.32/1': '1.32 / 1', //strategy
       },      
       transitionProperty: {
         'width': 'width',

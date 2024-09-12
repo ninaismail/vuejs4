@@ -7,12 +7,15 @@
                 partnerships and joint ventures, and funding innovation initiatives that need the support to drive change.</p>
            </div>
             <div class="flex flex-wrap items-center justify-between gap-y-10">
-                <div v-for="(item, key) in data" :key="key" class="md:w-[48%] w-full aspect-square">
-                    <div class="flex flex-col justify-end w-full h-full px-10 pb-40 bg-black bg-center bg-cover">
-                        <hr class="w-2/3 bg-primary h-[10px] border-0"/>
-                        <div class="relative p-6 space-y-10 cursor-pointer bg-offwhite/30 transition-height duration-600" @click="isOpen = key">
-                            <div class="flex items-center justify-between gap-3">
-                                <h2 class="text-offwhite font-[600] 2xl:text-2xl lg:text-xl md:text-lg lg:w-1/4 sm:text-md  tracking-wide">{{ item.title }}</h2>
+                <div v-for="(item, key) in data" :key="key" class="lg:w-[48%] w-full h-full aspect-1.32/1 min-h-[400px]">
+                    <div class="relative flex flex-col justify-end w-full h-full md:px-10">
+                        <img :src="item.image" alt="IBI Holding" width="761" height="578" center cover responsive loading="lazy" class="absolute inset-0 w-full h-full"/>
+                        <div class="relative bottom-0 p-6 cursor-pointer md:bottom-10 bg-bgcolor1/70" 
+                        @click="isOpen = key">
+                            <hr class="absolute left-0 -top-1 bg-primary h-[10px] border-0 transition-all duration-600"
+                            :class=" isOpen === key ? ' w-2/3' : 'w-1/4'"/>
+                            <div class="flex items-center justify-between gap-3 transition-all duration-600">
+                                <h2 class="text-offwhite font-[600] 2xl:text-2xl lg:text-xl md:text-lg w-1/4 sm:text-md tracking-wide">{{ item.title }}</h2>
                                 <span :class="{'-scale-y-100' : isOpen === key}" class="-mt-6 transition-all duration-600">
                                     <svg fill="#FDF1F5" class="w-10 h-10" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -21,7 +24,7 @@
                                     </svg>
                                 </span>
                             </div>
-                            <p v-if="isOpen === key" class="text-offwhite 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md font-[500] text-justify">{{ item.content }}</p>
+                            <p v-if="isOpen === key" class="text-offwhite 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md font-[500]">{{ item.content }}</p>
                         </div>
                     </div>
                 </div>

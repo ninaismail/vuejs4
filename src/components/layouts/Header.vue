@@ -38,8 +38,8 @@ onUnmounted(() => {
 <div v-if="isOpen" class="fixed inset-0 z-[3] w-full h-screen" @click="isOpen = false"/>
  <header class="fixed inset-0 z-[5] h-fit mx-auto py-3"
  :class="changeColor || isOpen === true ? 'bg-bgcolor shadow-lg' : 'bg-transparent'">
-  <div class="items-center justify-center mx-auto lg:w-10/12 lg:flex">
-    <img src="/logo.svg" alt="IBI Holding" width="241" height="76" center cover responsive loading="lazy" class=" max-lg:ps-[8.333333%]"/>
+  <div class="relative items-center justify-center mx-auto lg:w-10/12 lg:flex">
+    <img src="/logo.svg" alt="IBI Holding" width="241" height="76" center cover responsive loading="lazy" class="aspect-3.17/1 max-lg:ps-[8.333333%]"/>
     <!-- Desktop -->
     <nav class="items-center justify-end hidden gap-3 xl:gap-10 lg:w-9/12 lg:flex">
       <div v-for="(item, key) in navlinks" :key="key" class="relative">
