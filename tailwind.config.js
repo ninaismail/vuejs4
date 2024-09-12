@@ -18,10 +18,10 @@ export default {
         77: '0.77',
       },
       backgroundImage: {
-        'hero':'url(images/landingpage/hero.png)',
-        'footer':'url(images/landingpage/footer.png)',
-        'values':'url(images/landingpage/values.png)',
-        'pattern':'url(images/landingpage/pattern.svg)',
+        'hero':'url(/images/landingpage/hero.png)',
+        'footer':'url/(images/landingpage/footer.png)',
+        'values':'url(/images/landingpage/values.png)',
+        'pattern':'url(/images/landingpage/pattern.svg)',
       },
       aspectRatio: {
         '3.17/1': '3.17 / 1', //logo
