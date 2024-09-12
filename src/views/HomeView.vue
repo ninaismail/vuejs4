@@ -2,14 +2,14 @@
 import Hero from '../components/Hero.vue'
 import Commitment from '../components/Commitment.vue'
 import iconEnvironment from '../components/icons/iconEnvironment.vue'
-import iconEconomy from '../components/icons/iconEconomy.vue'
+import iconGoverment from '../components/icons/iconGoverment.vue'
 import iconSociety from '../components/icons/iconSociety.vue'
-import Approach from '../components/Approach.vue'
-import Investments from '@/components/Investments.vue'
+import Values from '../components/Approach.vue'
+import Strategy from '../components/Strategy.vue'
 const commitments = [
 {title: 'Environment', content:'We invest in solutions that minimize environmental impact, promote renewable energy, and drive ecological innovation.', icon: iconEnvironment},
-{title: 'Society', content:'We are committed to advancing social equity, supporting initiatives that improve quality of life, and creating opportunities for all.', icon: iconEconomy},
-{title: 'Governance', content:'Our governance practices ensure that we operate responsibly, ethically, and in alignment with the best interests of all stakeholders.', icon: iconSociety}
+{title: 'Society', content:'We are committed to advancing social equity, supporting initiatives that improve quality of life, and creating opportunities for all.', icon: iconSociety},
+{title: 'Governance', content:'Our governance practices ensure that we operate responsibly, ethically, and in alignment with the best interests of all stakeholders.', icon: iconGoverment}
 ]
 
 const approaches = [
@@ -31,7 +31,7 @@ const investments = [
   <main>
     <Hero />
     <Commitment :data="commitments"/>
-    <Approach :data="approaches"/>
-    <Investments :data="investments"/>
+    <Values :data="approaches"/>
+    <Strategy :data="investments"/>
   </main>
 </template>

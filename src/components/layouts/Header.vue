@@ -39,14 +39,14 @@ onUnmounted(() => {
  <header class="fixed inset-0 z-[5] h-[100px] mx-auto pt-3"
  :class="changeColor || isOpen === true ? 'bg-bgcolor shadow-md' : 'bg-transparent'">
   <div class="items-center justify-between mx-auto lg:w-10/12 lg:flex">
-    <div class="w-2/3 lg:w-2/12 max-lg:ps-[8.333333%]">
+    <div class="w-2/3 lg:w-2/12 max-lg:ps-[8.333333%] mt-2">
      <iconLogo/>
     </div>
     <!-- Desktop -->
     <nav class="items-center justify-center hidden gap-10 lg:w-9/12 lg:flex">
       <div v-for="(item, key) in navlinks" :key="key" class="relative">
         <RouterLink :id="item.name" :aria-label="'go to' + item.name" :to="item.to"   
-        class="px-3 cursor-pointer font-[500] 2xl:text-xl lg:text-lg md:text-md text-offwhite group"
+        class="px-3 cursor-pointer font-[500] 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md text-offwhite group"
         @mouseenter="isHover = item.id">
         <span>{{ item.name }}</span>
           <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-600"></span>
@@ -69,7 +69,7 @@ onUnmounted(() => {
     <nav v-show="isOpen" class="w-full p-8 space-y-8 lg:hidden bg-bgcolor">
       <div v-for="(item, key) in navlinks" :key="key">
         <RouterLink :id="item.name" :aria-label="'go to' + item.name" :to="item.to" 
-        class="w-6/12 font-[500] 2xl:text-xl lg:text-lg md:text-md cursor-pointer text-offwhite drop-shadow-md group">
+        class="w-6/12 font-[500] 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md cursor-pointer text-offwhite drop-shadow-md group">
           <span>{{ item.name }}</span>
           <span class="absolute -bottom-3 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-600"></span>
         </RouterLink>
