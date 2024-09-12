@@ -1,5 +1,5 @@
 <template>
-    <section class="relative bg-center border-white border-b-[2px] sm:rounded-b-[130px] rounded-b-[60px]">
+    <section class="relative bg-center">
     <div class="flex flex-col justify-around w-11/12 gap-10 mx-auto my-20 2xl:8/12 sm:w-10/12">
         <div class="flex flex-col gap-3 mx-auto">
         <h1 class="text-offwhite font-[600] 2xl:text-[68px] lg:text-7xl md:text-6xl sm:text-5xl text-4xl tracking-wide">Our Commitment to a Sustainable Future</h1>
