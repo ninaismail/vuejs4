@@ -3,5 +3,4 @@
     src: local("Barlow"), url('../fonts/Barlow/Barlow-Regular.woff2') format('woff2');
     font-style: normal;
     font-display: swap;
-    unicode-range: U+000-5FF;
 }
