@@ -39,9 +39,7 @@ onUnmounted(() => {
  <header class="fixed inset-0 z-[5] h-[100px] mx-auto pt-3"
  :class="changeColor || isOpen === true ? 'bg-bgcolor shadow-md' : 'bg-transparent'">
   <div class="items-center justify-between mx-auto lg:w-10/12 lg:flex">
-    <div class="w-2/3 lg:w-2/12 max-lg:ps-[8.333333%] mt-2">
-     <iconLogo/>
-    </div>
+     <iconLogo class="w-2/3 lg:w-2/12 max-lg:ps-[8.333333%] mt-2"/>
     <!-- Desktop -->
     <nav class="items-center justify-center hidden gap-10 lg:w-9/12 lg:flex">
       <div v-for="(item, key) in navlinks" :key="key" class="relative">

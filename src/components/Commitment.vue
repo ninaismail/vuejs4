@@ -7,8 +7,8 @@
        </div>
        <div class="flex flex-col gap-6 mx-auto">
         <h2 class="text-offwhite font-[600] 2xl:text-2xl lg:text-xl md:text-lg sm:text-md tracking-wide">Our guiding principles</h2>
-        <div class="grid w-full grid-cols-1 gap-20 lg:grid-cols-3 xs:grid-cols-2">
-            <div v-for="(item, key) in data" :key="key" class="flex flex-col items-center lg:min-h-[470px] min-h-[300px] h-full col-span-1 gap-6 border-2 border-offwhite group">
+        <div class="grid w-full grid-cols-1 gap-6 lg:gap-20 lg:grid-cols-3 xs:grid-cols-2">
+            <div v-for="(item, key) in data" :key="key" class="flex flex-col items-center lg:min-h-[470px] min-h-[400px] h-full col-span-1 gap-6 border-2 border-offwhite group">
                 <div role="bottom" class="relative top-0 w-full transition-all cursor-pointer duration-600" @click="isClicked = key"
                 :class="isClicked === key ? 'h-auto py-10' : 'h-[90%]'">
                     <BGOrangePattern/>
@@ -20,7 +20,7 @@
                 <div class="flex flex-col items-center justify-center w-full p-6 space-y-3"
                 :class="isClicked !== key ? 'h-auto' : 'h-[90%]'">
                     <p v-if="isClicked === key" class="text-offwhite font-[500] 2xl:text-2xl lg:text-xl md:text-lg sm:text-md">{{ item.content }}</p>
-                    <p  v-if="isClicked != key"  class="w-full flex items-center justify-between text-offwhite font-[500] 2xl:text-2xl lg:text-xl md:text-lg sm:text-md"><span>Read More</span><span>></span></p>
+                    <p  v-if="isClicked != key" class="w-full flex items-center justify-between text-offwhite font-[500] 2xl:text-2xl lg:text-xl md:text-lg sm:text-md"><span>Read More</span><span>></span></p>
                 </div>     
             </div>
         </div>

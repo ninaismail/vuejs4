@@ -1,5 +1,5 @@
 <template>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="auto" height="100%" viewBox="0 0 240.72 76.26">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-auto h-full">
   <defs>
     <linearGradient id="linear-gradient" x1="6.36" y1="10.99" x2="6.36" y2="64.48" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#f2780b"/>
