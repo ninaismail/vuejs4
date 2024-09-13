@@ -9,7 +9,7 @@
                 <div v-for="(item, key) in data" :key="key" class="lg:w-[48%] w-full h-full aspect-1.32/1 min-h-[400px]">
                     <div class="relative flex flex-col justify-end w-full h-full md:px-10">
                         <img :src="item.image" alt="IBI Holding" width="761" height="578" center cover responsive loading="lazy" class="absolute inset-0 w-full h-full"/>
-                        <div class="relative bottom-0 p-6 cursor-pointer md:bottom-10 bg-bgcolor1/70" 
+                        <div class="relative bottom-0 p-6 space-y-6 cursor-pointer md:bottom-10 bg-bgcolor1/70" 
                         @click="isOpen = key">
                             <hr class="absolute left-0 -top-1 bg-primary h-[10px] border-0 transition-all duration-1000"
                             :class=" isOpen === key ? ' w-2/3' : 'w-1/4'"/>

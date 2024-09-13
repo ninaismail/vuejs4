@@ -18,7 +18,7 @@ export default {
         77: '0.77',
       },
       backgroundImage: {
-        'hero':'url(/images/landingpage/hero.png)',
+        'hero':'url(/images/landingpage/hero_v1.png)',
         'footer':'url/(images/landingpage/footer.png)',
         'values':'url(/images/landingpage/values.png)',
         'pattern':'url(/images/landingpage/pattern.svg)',
