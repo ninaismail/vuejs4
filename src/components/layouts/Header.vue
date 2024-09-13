@@ -39,7 +39,7 @@ onUnmounted(() => {
  :class="changeColor || isOpen === true ? 'bg-bgcolor shadow-lg' : 'bg-transparent'">
   <div class="relative items-center justify-center mx-auto 2xl:w-8/12 sm:w-10/12 lg:flex">
     <RouterLink id="Home" aria-label="go to homepage" to="/">
-      <img src="/logo.svg" alt="IBI Holding" width="241" height="76" center cover responsive loading="lazy" class="aspect-3.17/1 max-lg:ps-[8.333333%] max-sm:ps-6"/>
+      <img src="/logo.svg" alt="IBI Holding" width="241" height="76" center cover responsive loading="eager" class="aspect-3.17/1 max-lg:ps-[8.333333%] max-sm:ps-6"/>
     </RouterLink>
     <!-- Desktop -->
     <nav class="items-center justify-center hidden gap-3 ps-20 xl:gap-10 lg:w-10/12 lg:flex">

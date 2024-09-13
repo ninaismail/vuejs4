@@ -21,7 +21,7 @@ export default {
         'hero':'url(/images/landingpage/hero_v1.png)',
         'footer':'url/(images/landingpage/footer.png)',
         'values':'url(/images/landingpage/values.png)',
-        'pattern':'url(/images/landingpage/pattern.svg)',
+        'pattern':'url(/images/landingpage/pattern_v1.svg)',
       },
       aspectRatio: {
         '3.17/1': '3.17 / 1', //logo

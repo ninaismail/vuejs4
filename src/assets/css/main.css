@@ -19,3 +19,9 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+.custom-bg {
+  background-image: url('/images/landingpage/pattern_v1.svg'); /* Path to your SVG file */
+  background-repeat: repeat; /* Adjust as needed */
+  background-size: auto 250px; /* Adjust the size of the pattern */
+  background-position: center; /* Center the pattern in the section */
+}
