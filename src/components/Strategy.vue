@@ -1,14 +1,14 @@
 <template>
-    <section  id="investments" class="relative py-20 bg-bgcolor custom-bg">
+    <section id="investments" class="relative py-20 bg-bgcolor custom-bg">
         <div class="relative flex flex-col justify-around w-11/12 gap-10 mx-auto 2xl:w-8/12 sm:w-10/12">
             <div class="flex flex-col gap-6 mx-auto 2xl:gap-10">
                 <h1 class="text-offwhite font-[600] 2xl:text-[68px] lg:text-7xl md:text-6xl sm:text-5xl text-4xl tracking-wide">Strategic Power in Action</h1>
                 <p class="text-offwhite font-[500] 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md ">IBI Holding invests in tech companies and adds value to industries by nurturing new businesses and funding innovation initiatives that need the support to drive change.</p>
            </div>
             <div class="flex flex-wrap items-center justify-between gap-y-10">
-                <div v-for="(item, key) in data" :key="key" class="2xl:w-[48%] lg:w-[50%] w-full h-full aspect-1.32/1 min-h-[400px]">
+                <div v-for="(item, key) in data" :key="key" class="2xl:w-[48%] lg:w-[49%] w-full h-full aspect-1.32/1 min-h-[400px]">
                     <div class="relative flex flex-col justify-end w-full h-full md:px-8">
-                        <div class="relative w-full h-full">
+                        <div class="absolute w-full h-full">
                             <img
                             :src="item.image"
                             alt="IBI Holding"
@@ -22,7 +22,7 @@
                             class="absolute inset-0 bg-bgcolor/50"
                             ></div>
                         </div>
-                        <div class="relative bottom-0 p-6 space-y-6 cursor-pointer md:bottom-10 bg-bgcolor1/70" 
+                        <div class="absolute bottom-0 p-6 space-y-6 cursor-pointer md:bottom-10 bg-bgcolor1/70" 
                         @click="isOpen = key">
                             <hr class="absolute left-0 -top-1 bg-primary h-[10px] border-0 transition-all duration-1000"
                             :class=" isOpen === key ? ' w-2/3' : 'w-1/4'"/>
