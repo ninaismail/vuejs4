@@ -1,8 +1,8 @@
 <template>
-    <section class="relative bg-bgcolor1">
+    <section id="approach" class="relative bg-bgcolor1">
         <BGLine/>
-            <div class="relative flex flex-wrap items-center justify-between w-11/12 py-20 mx-auto gap-y-6 2xl:8/12 sm:w-10/12">
-            <div class="w-full bg-center bg-cover bg-values  lg:w-6/12 aspect-1.14/1 flex flex-col justify-center gap-3">
+            <div class="relative flex flex-wrap items-center justify-between w-11/12 py-20 mx-auto gap-y-6 2xl:w-8/12 sm:w-10/12">
+            <div class="w-full bg-center bg-cover bg-values  lg:w-6/12 aspect-1.14/1 flex flex-col justify-center 2xl:gap-10 gap-6">
                     <div class="relative flex">
                         <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.92 234.07" class="absolute left-0 w-auto h-32">
                         <g id="Layer_1-2" data-name="Layer 1">
@@ -11,7 +11,7 @@
                         </svg>
                         <h1 class="text-offwhite font-[600] 2xl:text-[68px] lg:text-7xl md:text-6xl sm:text-5xl text-4xl tracking-wide relative z-2 left-10">Our Approach</h1>
                     </div>
-                    <p class="ms-4 px-6 text-offwhite font-[500] 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md md:w-3/4 w-[80%]">
+                    <p class="relative z-2 ms-10 pe-6 text-offwhite font-[500] 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md md:w-3/4 w-[80%]">
                         We offer strategic capital and deep expertise at crucial moments to empower visionary founders. Our approach combines innovative support with a focus on sustainability, ensuring exceptional returns and lasting impact.</p>
                 <!-- <img src="" alt="IBI Holding" width="54" height="53" center cover responsive loading="lazy" /> -->
             </div>

@@ -1,10 +1,9 @@
 <template>
-    <section class="relative py-20 bg-bgcolor">
-        <div class="relative flex flex-col justify-around w-11/12 gap-10 mx-auto 2xl:8/12 sm:w-10/12">
-            <div class="flex flex-col gap-3 mx-auto">
+    <section  id="investments" class="relative py-20 bg-bgcolor">
+        <div class="relative flex flex-col justify-around w-11/12 gap-10 mx-auto 2xl:w-8/12 sm:w-10/12">
+            <div class="flex flex-col gap-6 mx-auto 2xl:gap-10">
                 <h1 class="text-offwhite font-[600] 2xl:text-[68px] lg:text-7xl md:text-6xl sm:text-5xl text-4xl tracking-wide">Strategic Power in Action</h1>
-                <p class="text-offwhite font-[500] 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md ">IBI Holding invests in tech companies and adds value to industries by nurturing new businesses, seeking
-                partnerships and joint ventures, and funding innovation initiatives that need the support to drive change.</p>
+                <p class="text-offwhite font-[500] 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md ">IBI Holding invests in tech companies and adds value to industries by nurturing new businesses and funding innovation initiatives that need the support to drive change.</p>
            </div>
             <div class="flex flex-wrap items-center justify-between gap-y-10">
                 <div v-for="(item, key) in data" :key="key" class="lg:w-[48%] w-full h-full aspect-1.32/1 min-h-[400px]">
@@ -12,11 +11,11 @@
                         <img :src="item.image" alt="IBI Holding" width="761" height="578" center cover responsive loading="lazy" class="absolute inset-0 w-full h-full"/>
                         <div class="relative bottom-0 p-6 cursor-pointer md:bottom-10 bg-bgcolor1/70" 
                         @click="isOpen = key">
-                            <hr class="absolute left-0 -top-1 bg-primary h-[10px] border-0 transition-all duration-600"
+                            <hr class="absolute left-0 -top-1 bg-primary h-[10px] border-0 transition-all duration-1000"
                             :class=" isOpen === key ? ' w-2/3' : 'w-1/4'"/>
-                            <div class="flex items-center justify-between gap-3 transition-all duration-600">
+                            <div class="flex items-center justify-between gap-6 transition-all duration-1000 2xl:gap-10">
                                 <h2 class="text-offwhite font-[600] 2xl:text-2xl lg:text-xl md:text-lg w-1/4 sm:text-md tracking-wide">{{ item.title }}</h2>
-                                <span :class="{'-scale-y-100' : isOpen === key}" class="-mt-6 transition-all duration-600">
+                                <span :class="{'-scale-y-100' : isOpen === key}" class="-mt-6 transition-all duration-1000">
                                     <svg fill="#FDF1F5" class="w-10 h-10" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
