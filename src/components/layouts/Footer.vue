@@ -12,9 +12,9 @@ const footerlinks = [
 
 <template>
     <hr class="w-full h-[4px] bg-primary border-none"/>
-    <footer class="relative flex flex-wrap h-full min-h-[60vh] bg-bgcolor">
-      <RouterLink id="Home" aria-label="go to homepage" to="/" class="relative w-full lg:w-1/2 min-h-[60vh]">
-        <img src="/images/landingpage/footer.png" alt="IBI Holding" center cover responsive loading="lazy" class="aspect-1.57/1 absolute w-full h-full inset-0"/>
+    <footer class="relative flex flex-wrap h-full sm:min-h-[60vh] bg-bgcolor">
+      <RouterLink id="Home" aria-label="go to homepage" to="/" class="relative w-full lg:w-1/2 aspect-1.57/1 sm:min-h-[60vh]">
+        <img src="/images/landingpage/footer.png" alt="IBI Holding" center cover responsive loading="lazy" class="absolute inset-0 w-full h-full"/>
       </RouterLink>
       <div class="relative flex flex-col justify-center w-full h-full lg:w-1/2 min-h-[60vh]">
           <div class="flex justify-between h-full gap-6 p-6 max-sm:flex-wrap 2xl:gap-10 2xl:p-10">
