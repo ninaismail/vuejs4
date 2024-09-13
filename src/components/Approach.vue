@@ -1,5 +1,5 @@
 <template>
-    <section id="approach" class="bg-bgcolor">
+    <section id="approach" class="bg-bgcolor custom-bg">
     <div class="relative bg-bgcolor1 sm:rounded-b-[160px] rounded-b-[100px] border-b border-offwhite w-[102%] overflow-hidden sm:-left-3 -left-1">
         <div class="relative flex flex-wrap items-center justify-between w-11/12 py-20 mx-auto gap-y-6 2xl:w-8/12 sm:w-10/12">
             <div class="w-full bg-center bg-cover bg-values 2xl:w-[48%] lg:w-[51%] aspect-1.14/1 flex flex-col justify-center gap-y-10">
