@@ -30,7 +30,7 @@ const footerlinks = [
               <div class="space-y-6">
                 <h1 class="text-offwhite 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md font-[700]">Office Location</h1>
                 <p class="cursor-pointer font-[500] 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md text-offwhite 2xl:w-2/3">
-                  UAE, Abu Dhabi, Addax tower, Al reem island, office 3003
+                  UAE, Abu Dhabi, Addax tower, Al reem island
               </p>                
               </div>
               <div class="space-y-6">

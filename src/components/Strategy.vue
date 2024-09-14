@@ -8,14 +8,16 @@
             <div class="flex flex-wrap items-center justify-between gap-y-10">
                 <div v-for="(item, key) in data" :key="key" class="2xl:w-[48%] lg:w-[49%] w-full h-full aspect-1.32/1 min-h-[400px]">
                     <div class="relative flex flex-col justify-end w-full h-full md:px-6">
-                            <img
-                            :src="item.image"
-                            alt="IBI Holding"
-                            width="761"
-                            height="578"
-                            class="absolute inset-0 object-cover w-full h-full"
-                            loading="lazy"
-                            />
+                        <img
+                        :src="item.image"
+                        alt="IBI Holding"
+                        width="761"
+                        height="578"
+                        class="absolute inset-0 w-full h-full"
+                        loading="lazy"
+                        responsive
+                        center cover
+                        />
                         <div class="relative bottom-0 p-6 space-y-6 cursor-pointer md:bottom-10 bg-bgcolor1/70" 
                         @click="isOpen = key">
                             <hr class="absolute left-0 -top-1 bg-primary h-[10px] border-0 transition-all duration-1000"
