@@ -9,7 +9,7 @@
         <div class="flex flex-col gap-6 mx-auto 2xl:gap-10">
             <h2 class="text-offwhite font-[600] 2xl:text-2xl lg:text-xl md:text-lg sm:text-md tracking-wide">Our guiding principles</h2>
             <div class="grid w-full grid-cols-1 gap-6 2xl:gap-10 lg:grid-cols-3 xs:grid-cols-2">
-                <div v-for="(item, key) in data" :key="key" class="flex flex-col items-center min-h-[400px] h-full col-span-1 border border-offwhite bg-bgcolor group">
+                <div v-for="(item, key) in data" :key="key" class="flex flex-col items-center h-[400px] col-span-1 border border-offwhite bg-bgcolor group">
                     <div class="relative top-0 w-full" :class="isClicked === key ? 'h-auto py-10' : 'h-[95%]'">
                         <BGOrangePattern/>
                         <div class="relative z-[1] h-full w-full flex flex-col items-center justify-center 2xl:gap-10 gap-6">
