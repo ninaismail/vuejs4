@@ -13,10 +13,10 @@ const footerlinks = [
 <template>
     <hr class="w-full h-[4px] bg-primary border-none"/>
     <footer class="relative flex flex-wrap h-full sm:min-h-[60vh] bg-bgcolor">
-      <RouterLink id="Home" aria-label="go to homepage" to="/" class="relative w-full lg:w-1/2 aspect-1.57/1 sm:min-h-[60vh]">
+      <RouterLink id="Home" aria-label="go to homepage" to="/" class="relative w-full lg:w-1/2 aspect-1.57/1">
         <img src="/images/landingpage/footer.png" alt="IBI Holding" center cover responsive loading="lazy" class="absolute inset-0 w-full h-full"/>
       </RouterLink>
-      <div class="relative flex flex-col justify-center w-full h-full lg:w-1/2 min-h-[60vh]">
+      <div class="relative flex flex-col justify-center w-full h-full lg:w-1/2">
           <div class="flex justify-between h-full gap-6 p-6 max-sm:flex-wrap 2xl:gap-10 2xl:p-10">
             <div class="2xl:w-[20%] lg:w-1/4 sm:w-1/4">
               <IconLogoFooter/>
