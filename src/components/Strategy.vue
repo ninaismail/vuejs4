@@ -18,9 +18,10 @@
                     center cover
                     />
                     <div class="relative bottom-0 p-6 space-y-6 cursor-pointer md:bottom-10 bg-bgcolor1/70" 
-                    @click="isOpen = key">
+                    @click="isOpen = key"
+                    >
                         <hr class="absolute left-0 -top-1 bg-primary h-[10px] border-0 transition-all duration-1000"
-                        :class=" isOpen === key ? ' w-2/3' : 'w-1/4'"/>
+                        :class=" isOpen === key ? 'w-2/3' : 'w-1/4'"/>
                         <div class="flex items-center justify-between gap-6 2xl:gap-10">
                             <h2 class="text-offwhite font-[600] 2xl:text-2xl lg:text-xl md:text-lg w-1/4 sm:text-md tracking-wide">{{ item.title }}</h2>
                             <span :class="{'-scale-y-100' : isOpen === key}" class="-mt-6 duration-1000 transform">
@@ -31,7 +32,7 @@
                                 </svg>
                             </span>
                         </div>
-                        <p v-if="isOpen === key" class="text-offwhite 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md font-[500]">{{ item.content }}</p>
+                        <p v-if="isOpen === key" class="transition-all duration-1000 text-offwhite 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md font-[500]">{{ item.content }}</p>                            
                     </div>
                 </div>
             </div>
