@@ -6,12 +6,12 @@
                 <p class="text-offwhite font-[500] 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md ">IBI Holding invests in tech companies and adds value to industries by nurturing new businesses and funding innovation initiatives that need the support to drive change.</p>
            </div>
             <div class="grid w-full grid-cols-1 gap-6 2xl:gap-10 lg:grid-cols-3 xs:grid-cols-2">
-                <div v-for="(item, key) in data" :key="key" class="relative flex flex-col justify-end col-span-1 2xl:px-6 lg:px-4 px-6 h-[578px]">
+                <div v-for="(item, key) in data" :key="key" class="relative flex flex-col justify-end col-span-1 2xl:px-6 lg:px-4 px-6 h-[601px]">
                     <img
                     :src="item.image"
                     alt="IBI Holding"
-                    width="761"
-                    height="578"
+                    width="506"
+                    height="601"
                     class="absolute inset-0 w-full h-full"
                     loading="lazy"
                     responsive

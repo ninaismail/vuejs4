@@ -6,9 +6,9 @@ import iconGoverment from '../components/icons/iconGoverment.vue'
 import iconSociety from '../components/icons/iconSociety.vue'
 import Approach from '../components/Approach.vue'
 import Strategy from '../components/Strategy.vue'
-import strategic1 from '/images/landingpage/strategy/Advanced-Technology-8.png'
-import strategic2 from '/images/landingpage/strategy/Infrastructure-8.png'
-import strategic3 from '/images/landingpage/strategy/Asset-41-8.png'
+import strategic1 from '/images/landingpage/strategy/Asset-57-8.png'
+import strategic2 from '/images/landingpage/strategy/Asset-58-8.png'
+import strategic3 from '/images/landingpage/strategy/Asset-59-8.png'
 const commitments = [
 {title: 'Environment', content:'We invest in solutions that minimize environmental impact, promote renewable energy, and drive ecological innovation.', icon: iconEnvironment},
 {title: 'Society', content:'We are committed to advancing social equity, supporting initiatives that improve quality of life, and creating opportunities for all.', icon: iconSociety},

@@ -18,7 +18,7 @@ export default {
         77: '0.77',
       },
       backgroundImage: {
-        'hero':'url(/images/landingpage/hero_v1.png)',
+        'hero':'url(/images/landingpage/hero_v2.png)',
         'footer':'url/(images/landingpage/footer.png)',
         'values':'url(/images/landingpage/values.png)',
         'pattern':'url(/images/landingpage/pattern_v1.svg)',
@@ -28,7 +28,7 @@ export default {
         '2.27/1': '2.27 / 1', //hero
         '1.14/1': '1.14 / 1', //values
         '1.57/1': '1.57 / 1', //footer
-        '1.32/1': '1.32 / 1', //strategy
+        '0.84/1': '0.84 / 1', //strategy
       },      
       transitionProperty: {
         'width': 'width',
