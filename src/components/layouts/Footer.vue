@@ -14,7 +14,7 @@ const footerlinks = [
     <hr class="w-full h-[4px] bg-primary border-none"/>
     <footer class="relative flex flex-wrap h-full sm:min-h-[60vh] bg-bgcolor">
       <RouterLink id="Home" aria-label="go to homepage" to="/" class="relative w-full lg:w-1/2 aspect-1.57/1">
-        <img src="/images/landingpage/footer.png" alt="IBI Holding" center cover responsive loading="lazy" class="absolute inset-0 w-full h-full"/>
+        <img src="/images/landingpage/footer_v1.png" alt="IBI Holding" center cover responsive loading="lazy" class="absolute inset-0 w-full h-full"/>
       </RouterLink>
       <div class="relative flex flex-col justify-center w-full h-full lg:w-1/2 sm:min-h-[60vh]">
           <div class="flex justify-between h-full gap-6 sm:p-[8.333333%] lg:p-6 max-sm:flex-wrap 2xl:gap-10 2xl:p-10 p-6">
