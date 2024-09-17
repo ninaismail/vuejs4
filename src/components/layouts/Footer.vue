@@ -16,8 +16,8 @@ const footerlinks = [
       <RouterLink id="Home" aria-label="go to homepage" to="/" class="relative w-full lg:w-1/2 aspect-1.57/1">
         <img src="/images/landingpage/footer.png" alt="IBI Holding" center cover responsive loading="lazy" class="absolute inset-0 w-full h-full"/>
       </RouterLink>
-      <div class="relative flex flex-col justify-between w-full h-full lg:w-1/2 sm:min-h-[60vh]">
-          <div class="flex justify-between h-full gap-6 p-6 max-sm:flex-wrap 2xl:gap-10 2xl:p-10">
+      <div class="relative flex flex-col justify-center w-full h-full lg:w-1/2 sm:min-h-[60vh]">
+          <div class="flex justify-between h-full gap-6 sm:p-[8.333333%] lg:p-6 max-sm:flex-wrap 2xl:gap-10 2xl:p-10 p-6">
             <div class="2xl:w-[20%] lg:w-1/4 sm:w-1/4">
               <IconLogoFooter/>
               <h1 class="text-offwhite 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md font-[700] mt-20 mb-6">Menu</h1>
@@ -49,7 +49,7 @@ const footerlinks = [
               </div>
             </div> 
           </div>
-          <p class="text-center tracking-wide font-[200] text-white max-sm:text-[14px] bg-bgcolor mt-auto -mb-6">© All Rights Reserved, 2024 IBI Holding.</p>
+          <p class="text-center tracking-wide font-[200] text-white max-sm:text-[14px] bg-bgcolor mt-auto sm:-mb-6">© All Rights Reserved, 2024 IBI Holding.</p>
       </div>      
     </footer>
 </template>    
