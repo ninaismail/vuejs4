@@ -1,6 +1,6 @@
 <template>
     <section id="responsibility" class="bg-bgcolor1">
-        <div class="relative bg-bgcolor custom-bg sm:rounded-b-[160px] rounded-b-[100px] border-b border-offwhite w-[102%] overflow-hidden sm:-left-3 -left-1">
+        <div class="relative bg-bgcolor custom-bg sm:rounded-b-[160px] rounded-b-[40px] border-b border-offwhite w-[102%] overflow-hidden sm:-left-3 -left-1">
         <div class="flex flex-col justify-around w-11/12 gap-10 py-20 mx-auto 2xl:w-8/12 sm:w-10/12">
             <div class="flex flex-col gap-6 mx-auto 2xl:gap-10">
             <h1 class="text-offwhite font-[600] 2xl:text-[68px] lg:text-7xl md:text-6xl sm:text-5xl text-4xl tracking-wide">Our Commitment to a Sustainable Future</h1>

@@ -1,6 +1,6 @@
 <template>
     <section id="approach" class="bg-bgcolor custom-bg">
-    <div class="relative bg-bgcolor1 sm:rounded-b-[160px] rounded-b-[100px] border-b border-offwhite w-[102%] overflow-hidden sm:-left-3 -left-1">
+    <div class="relative bg-bgcolor1 sm:rounded-b-[160px] rounded-b-[40px] border-b border-offwhite w-[102%] overflow-hidden sm:-left-3 -left-1">
         <div class="relative flex flex-wrap items-center justify-between w-11/12 py-20 mx-auto gap-y-6 2xl:w-8/12 sm:w-10/12">
             <div class="w-full bg-center bg-cover bg-values 2xl:w-[48%] lg:w-[51%] aspect-1.14/1 flex flex-col justify-center gap-y-10">
                     <div class="relative flex">
@@ -18,8 +18,8 @@
             <ul role="list" class="w-full space-y-10 2xl:w-[48%] lg:w-[48%] list-style-none">
                 <li v-for="(item, key) in data" :key="key" class="flex gap-x-4 gap-y-10">
                     <span class="text-offwhite h-[38px] w-[38px] bg-primary font-[900] 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md p-3 grid place-content-center">0{{ item.id }}</span>
-                    <div class="space-y-6">
-                        <h2 class="text-offwhite font-[600] 2xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl">{{ item.title }}</h2>
+                    <div class="space-y-5">
+                        <h2 class="text-offwhite font-[600] 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md">{{ item.title }}</h2>
                         <p class="text-offwhite 2xl:text-[22px] lg:text-xl md:text-lg sm:text-md font-[500]">{{ item.content }}</p>
                     </div>
                 </li>
